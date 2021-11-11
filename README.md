@@ -1,4 +1,4 @@
-This project was currently in development phase. Hosted in: [https://dvdshop.namespaceahr.eu/](https://dvdshop.namespaceahr.eu/)
+This project is currently in development phase. Hosted in: [https://dvdshop.namespaceahr.eu/](https://dvdshop.namespaceahr.eu/)
 ## Available Scripts
 
 In the project directory, you can run:
