@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: sans-serif;
+  border: 1px dashed #ccc;
+  padding: 30px;
+  font-size: 14px;
+  margin: 30px;
+}
+.container div {
+  margin-bottom: 20px;
+  position: relative;
+}
+.container div:last-child {
+  margin: 0;
+}
+.container label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.container button {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+  padding: 12px;
+  line-height: 1;
+  cursor: pointer;
+}
+.container button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.container input {
+  font-size: inherit;
+  font-family: inherit;
+  border: 2px solid #999;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.container input:required:placeholder-shown {
+  border: 2px solid magenta;
+}
+.container input:read-only {
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.07);
+  cursor: not-allowed;
+}
+.container input:required:valid + .validate-icon {
+  opacity: 1;
+}
+
+.container.form-focussed input:invalid {
+  border: 2px solid red;
+}
+
+.validate-icon {
+  position: absolute;
+  right: 10px;
+  opacity: 0;
+}
+
+.validate-icon:before {
+  position: absolute;
+  content: "";
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABZElEQVQ4jc3UPU/CQBwG8OdoyXUhomEgyGI1USMuBv0SAm5IiInfTVAjJvAVjMokylZ8oTgIJg5iWxauIOdgqE3akoILz/a/Xn99LrkUmPcQ+1B/rYcZZVnOyaKvlwn/EiXxIrmU1B3gL2Y+AFiZslRLlISdMRoYr5rUzM2AAYA87A8Px4MFjjiiM2AAAM5JzAFOE41pKDcrYN/M8WxqUGMaCsoZGt0nvPXa/wN1U0excQ5jYCAjp7AWXvUHcs6hfD46mp0oReimjgM5je1IwvWjruBNp4pys4Kr9rWFFRqnMMweMnIKiciW5ylEt8W96C5UXcVtpwo27ONZe7Ewr2YTG0oiRX4jh+VQDHcf974xTxAAqECRX88hHoojLe/7wgCPI9vR480jEEImbXNvSAh/d9vgCyOwLqQFUkZLAFq+q1gW1KAkXNrmv9S6tYVBf5QNEO68sS4ZcaIGpUDJ/vua//wAP6SEPyc2v7sAAAAASUVORK5CYII=") no-repeat center;
+  width: 24px;
+  height: 24px;
+  right: 0;
+  bottom: 10px;
+  border-radius: 6px;
+}
+
+.header{
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* jsd */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  background: #eee;
+}
+
+.container_poster {
+  display: block;
+  width: 375px;
+  height: 677px;
+  background: #ffffff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  padding: 70px 30px 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.container_poster:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: red;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("https://shaunkitchener.files.wordpress.com/2017/12/albumsmontage.jpg");
+}
+
+.poster {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.poster__img {
+  height: 200px;
+  background: url("https://shaunkitchener.files.wordpress.com/2017/12/albumsmontage.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.poster__info {
+  background: #fff;
+  padding: 25px 25px 40px;
+}
+.poster__title {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-bottom: 0.4em;
+}
+.poster__text {
+  font-size: 0.9em;
+  color: #999;
+  font-weight: 300;
+}
