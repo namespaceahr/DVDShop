@@ -1,0 +1,60 @@
+/* Size episode preview images in a more compact way */
+.listItemImage.listItemImage-large.itemAction.lazy {
+  height: 110px;
+}
+.listItem-content {
+  height: 115px;
+}
+.secondary.listItem-overview.listItemBodyText {
+  height: 61px;
+  margin: 0;
+}
+
+#loginPage {
+  background: url('https://i.ibb.co/MBY8b1q/netflix.jpg');
+  background-size: cover;
+}
+
+/* Narrow the login form */
+#loginPage .readOnlyContent,
+#loginPage form {
+  max-width: 22em;
+}
+
+/* Hide "please login" text, margin is to prevent login form moving too far up */
+#loginPage h1 {
+  display: none;
+}
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 50px;
+}
+
+/* Hide "manual" and "forgot" buttons */
+#loginPage .raised.cancel.block.btnManual.emby-button {
+  display: none;
+}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none;
+}
+
+#loginPage  input 
+{
+    background: transparent;
+}
+/* Login Page Logo*/
+
+.imgLogoIcon {
+
+content: url(https://i.imgur.com/YX5Q5kR.png) !important; }
+
+/* Main Drawer Mobile Logo*/
+
+.adminDrawerLogo img {
+
+content: url(https://i.imgur.com/YX5Q5kR.png) !important; }
+
+/* Home Page Logo*/
+
+.pageTitleWithLogo {
+
+background-image: url(https://i.imgur.com/YX5Q5kR.png) !important; }
